@@ -25,19 +25,6 @@ import { Navbar } from './Navbar';
     //  console.log(json) ; 
     setList(json) ; 
 
-    const response2 =await fetch("http://localhost:8000/getRegiments", {
-      method: "GET",
-      headers: {
-        "Content-Type": "application/json",
-        'Content-Type': 'application/x-www-form-urlencoded',
-      }, 
-     
-    });
-    const json2 =  await response2.json();
-    
-    setListReg(json2) ; 
-   
-  
 
   }
   
